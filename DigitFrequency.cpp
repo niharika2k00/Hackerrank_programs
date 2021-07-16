@@ -22,8 +22,8 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
 
-    char s[1000];
-    char map[10];
+    char s[1000]; // if 2 2 1 4
+    char map[10]; // bcz only degit frequency is required to be found
     scanf("%s", &s);
     int len = strlen(s);
 
@@ -32,7 +32,7 @@ int main()
 
     for (int i = 0; i < len; i++)
     {
-        int x = s[i] - '0';
+        int x = s[i] - '0'; // ascii of 2 - ascii of 0   OR  (2-0)
         if (x >= 0 && x <= 9)
             map[x]++;
     }
